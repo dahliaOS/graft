@@ -1,4 +1,8 @@
 <p align="center">
+  <img width="120%" src="https://github.com/dahlia-os/brand/blob/master/Applications/Graft/Logo%20SVGs/graftlogotextbgsvg.svg"
+</p>
+
+<p align="center">
 <a href="https://dahliaos.io">Website</a> ●
 <a href="https://discord.gg/7qVbJHR">Discord</a> ●
 <a href="https://github.com/dahlia-os/releases/releases">Releases</a> ●
@@ -9,6 +13,14 @@
 ![GitHub](https://img.shields.io/github/license/dahlia-os/graft?color=brighgreen)
 
  - **Graft** is tool to manange virtual machines and containers on dahliaOS
+ - **Graft's front-end** is written in Flutter
+ - Read more about it [here!](https://github.com/dahlia-os/documentation/blob/master/os/linux-based.md#graft-and-the-modular-userspace)
+
+<p align="center">
+  <img width="100%" src="https://github.com/dahlia-os/documentation/blob/master/assets/screenshot/graft.png"
+</p>
+
+> Graft application running on dahliaOS Linux-based build 201215
 
 ## Contribute
 
