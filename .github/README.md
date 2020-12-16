@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="120%" src="https://github.com/dahlia-os/brand/blob/master/Applications/Graft/Logo%20SVGs/graftlogotextbgsvg.svg"
-</p>
+![Graft logo](https://github.com/dahlia-os/brand/blob/master/Applications/Graft/Logo%20SVGs/graftlogotextbgsvg.svg)
 
 <p align="center">
 <a href="https://dahliaos.io">Website</a> ●
@@ -16,11 +14,9 @@
  - **Graft's front-end** is written in Flutter
  - Read more about it [here!](https://github.com/dahlia-os/documentation/blob/master/os/linux-based.md#graft-and-the-modular-userspace)
 
-<p align="center">
-  <img width="100%" src="https://github.com/dahlia-os/documentation/blob/master/assets/screenshot/graft.png"
-</p>
+![Graft application](https://github.com/dahlia-os/documentation/blob/master/assets/screenshot/graft.png)
 
-> Graft application running on dahliaOS Linux-based build 201215
+> Graft application
 
 ## Contribute
 
