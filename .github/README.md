@@ -6,7 +6,7 @@
 <a href="https://github.com/dahlia-os/documentation">Documentation</a>
 
 # Graft
-![GitHub](https://img.shields.io/github/license/dahlia-os/graft?color=bright-green)
+![GitHub](https://img.shields.io/github/license/dahlia-os/graft?color=brighgreen)
 
  - **Graft** is tool to manange virtual machines and containers on dahliaOS
 
