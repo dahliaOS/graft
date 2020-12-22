@@ -14,7 +14,7 @@
  - **Graft's front-end** is written in Flutter
  - Read more about it [here!](https://github.com/dahliaos/documentation/blob/master/os/linux-based.md#graft-and-the-modular-userspace)
 
-![Graft application](https://github.com/dahliaos/documentation/blob/master/assets/screenshot/graft.png)
+![Graft application](./Screenshots/Graft.png)
 
 > Graft application
 
