@@ -139,7 +139,7 @@ class GraftManagement extends StatelessWidget {
                       ),
                       CheckboxListTile(
                         title: Text("Hardware Acceleration"),
-                        onChanged: (bool value) {},
+                        onChanged: (bool? value) {},
                         value: true,
                         controlAffinity: ListTileControlAffinity.leading,
                       )

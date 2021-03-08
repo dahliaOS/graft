@@ -63,7 +63,7 @@ class GraftHome extends StatelessWidget {
 }
 
 class GraftSideBar extends StatefulWidget {
-  GraftSideBar({Key key}) : super(key: key);
+  GraftSideBar({Key? key}) : super(key: key);
 
   @override
   _GraftSideBarState createState() => _GraftSideBarState();
@@ -83,7 +83,7 @@ class _GraftSideBarState extends State<GraftSideBar> {
                 "Containers",
                 style: Theme.of(context)
                     .textTheme
-                    .headline6
+                    .headline6!
                     .copyWith(fontWeight: FontWeight.w500, fontSize: 18),
               ),
               FlatButton(
@@ -144,7 +144,7 @@ class _GraftSideBarState extends State<GraftSideBar> {
   }
 
   Container buildContainer(
-      {BuildContext context, GraftType type, String title, String size}) {
+      {BuildContext? context, GraftType? type, String? title, String? size}) {
     return Container(
       margin: EdgeInsets.only(bottom: 8),
       height: 100,
@@ -166,7 +166,7 @@ class _GraftSideBarState extends State<GraftSideBar> {
                 ),
                 Text(
                   "$title",
-                  style: Theme.of(context).textTheme.headline6.copyWith(
+                  style: Theme.of(context!).textTheme.headline6!.copyWith(
                       letterSpacing: 1.1, fontWeight: FontWeight.w500),
                 ),
                 Row(
