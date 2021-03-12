@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Actions -->
+    <String name="actions.new">New</String>
+    <String name="actions.start">Start</String>
+    <String name="actions.restart">Restart</String>
+    <String name="actions.stop">Stop</String>
+    <String name="actions.erase">Erase</String>
+    <!-- Panes -->
+    <String name="panes.containers">Containers</String>
+    <String name="panes.management">Management</String>
+    <String name="panes.kernel_dmesg">Kernel DMESG</String>
+    <String name="panes.resources">Resources</String>
+    <String name="panes.system">System</String>
+    <!-- Types -->
+    <String name="types.vm">Virtual Machine</String>
+    <String name="types.container">Container</String>
+    <!-- Resources -->
+    <String name="resources.cpu">Cpu</String>
+    <String name="resources.memory">Memory</String>
+    <String name="resources.storage">Storage</String>
+</resources>
