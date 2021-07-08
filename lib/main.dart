@@ -1,9 +1,11 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:graft/dashboard.dart';
 import 'package:graft/log.dart';
 import 'package:graft/management.dart';
 import 'package:graft/resources.dart';
+
+import 'VmTile.dart';
 
 main() {
   runApp(Graft());
@@ -14,9 +16,69 @@ class Graft extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GraftHome(),
+      home: GraftHub(),
       theme: ThemeData(
-          accentColor: Colors.blue[700], primaryColor: Colors.blue[600]),
+          platform: TargetPlatform.linux,
+          visualDensity: VisualDensity.comfortable,
+          accentColor: Colors.blue[700],
+          primaryColor: Colors.blue[600]),
+    );
+  }
+}
+
+class GraftHub extends StatefulWidget {
+  const GraftHub({Key? key}) : super(key: key);
+
+  @override
+  _GraftHubState createState() => _GraftHubState();
+}
+
+class _GraftHubState extends State<GraftHub> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      floatingActionButton: FloatingActionButton.extended(
+          icon: Icon(Icons.add), onPressed: () {}, label: Text('NEW')),
+      appBar: AppBar(
+        title: Text("Graft"),
+      ),
+      body: Row(
+        children: [
+          Container(
+            width: 375,
+            color: Colors.grey[100],
+            child: ListView(children: <Widget>[
+              Container(
+                height: 10,
+              ),
+              ListTile(
+                leading: Icon(Icons.memory),
+                title: Text('Machines'),
+                trailing: TextButton.icon(
+                  onPressed: () {
+                    print("hi");
+                  },
+                  icon: Icon(Icons.add),
+                  label: Text("NEW"),
+                ),
+                onTap: () {},
+              ),
+              Divider(),
+              vmtile("Linux", "dahliaOS 200804", "QEMU/KVM", Colors.deepOrange),
+              vmtile(
+                  "dahliaOS-build", "Ubuntu 20.04", "chroot", Colors.blueGrey),
+              vmtile("kernel", "Fedora 34", "QEMU/KVM", Colors.green),
+              vmtile("Windows", "Windows 11", "QEMU/KVM", Colors.blue),
+              vmtile("macintosh", "macOS Monterey", "QEMU/KVM", Colors.purple),
+              vmtile("Fuchsia", "Fuchsia", "FImage", Colors.pink),
+              vmtile("linux", "dahliaOS 200804", "QEMU/KVM", Colors.red),
+            ]),
+          ),
+          Expanded(
+            child: Dashboard(),
+          )
+        ],
+      ),
     );
   }
 }
@@ -255,4 +317,4 @@ class _GraftDetailsState extends State<GraftDetails> {
   }
 }
 
-enum GraftType { CONTAINER, VIRTUALMACHINE }
+enum GraftType { CONTAINER, VIRTUALMACHINE, CHROOT, FIMAGE }
