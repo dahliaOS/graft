@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Graft
+Exec=graft
+Terminal=false
+Icon=graft
+Type=Application
+Categories=Utility;
