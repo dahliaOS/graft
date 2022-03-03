@@ -15,7 +15,7 @@
 <a href="https://paypal.me/officialdahliaos">Donate</a> ●
 <a href="https://github.com/dahliaos/documentation">Documentation</a>
 
-#  Graft &nbsp;<img src="https://raw.githubusercontent.com/dahliaOS/graft/main/dahliaOS/graft.png" width=3%>
+#  Graft &nbsp;<img src="https://raw.githubusercontent.com/dahliaOS/graft/main/dahliaOS/graft.png" width=25>
 
  
 ![GitHub](https://img.shields.io/github/license/dahliaos/graft?color=brighgreen)
