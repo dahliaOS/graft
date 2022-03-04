@@ -1,4 +1,12 @@
-![Graft logo](https://github.com/dahliaos/brand/blob/master/Applications/Graft/Logo%20SVGs/graftlogotextbgsvg.svg)
+<p align="center">
+  <img width="30%" src="https://raw.githubusercontent.com/dahliaOS/brand/master/dahliaOS/svg/logotypewhitetext.svg#gh-dark-mode-only"
+  
+</p>
+  
+<p align="center">
+  <img width="30%" src="https://github.com/dahliaOS/brand/blob/master/dahliaOS/svg/logotypeblacktext.svg#gh-light-mode-only"
+  
+</p>
 
 <p align="center">
 <a href="https://dahliaos.io">Website</a> ●
@@ -7,7 +15,9 @@
 <a href="https://paypal.me/officialdahliaos">Donate</a> ●
 <a href="https://github.com/dahliaos/documentation">Documentation</a>
 
-# Graft
+#  Graft &nbsp;<img src="https://raw.githubusercontent.com/dahliaOS/graft/main/dahliaOS/graft.png" width=25>
+
+ 
 ![GitHub](https://img.shields.io/github/license/dahliaos/graft?color=brighgreen)
 
  - **Graft** is tool to manange virtual machines and containers on dahliaOS
@@ -23,11 +33,15 @@
 If you're wondering how to contribute to the project, please refer to [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 ## License
-
 <p align="left">
-  <img width="40%" src="https://github.com/dahliaos/brand/blob/master/Logo%20PNGs/dahliaOS%20logo%20with%20text%20(drop%20shadow).png"
+  <img width="45%" src="https://raw.githubusercontent.com/dahliaOS/brand/master/dahliaOS/svg/logotypewhitetext.svg#gh-dark-mode-only"
+  
 </p>
-
-Copyright @ 2019-2020 The dahliaOS Authors contact@dahliaos.io
+  
+<p align="left">
+  <img width="45%" src="https://github.com/dahliaOS/brand/blob/master/dahliaOS/svg/logotypeblacktext.svg#gh-light-mode-only"
+  
+</p>
+Copyright @ 2019-2022 The dahliaOS Authors contact@dahliaos.io
 
 This project is licensed under the [Apache 2.0 license](../LICENSE)
