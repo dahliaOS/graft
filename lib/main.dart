@@ -1,4 +1,4 @@
-import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:graft/dashboard.dart';
 import 'package:graft/log.dart';
@@ -20,8 +20,9 @@ class Graft extends StatelessWidget {
       theme: ThemeData(
           platform: TargetPlatform.linux,
           visualDensity: VisualDensity.comfortable,
-          accentColor: Colors.blue[700],
-          primaryColor: Colors.blue[600]),
+          primaryColor: Colors.blue[600],
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: Colors.blue[700])),
     );
   }
 }
@@ -148,10 +149,16 @@ class _GraftSideBarState extends State<GraftSideBar> {
                     .headline6!
                     .copyWith(fontWeight: FontWeight.w500, fontSize: 18),
               ),
-              FlatButton(
-                color: Theme.of(context).accentColor.withOpacity(0.2),
+              TextButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                    Theme.of(context).colorScheme.secondary.withOpacity(0.2),
+                  ),
+                  textStyle: MaterialStateProperty.all(
+                    TextStyle(color: Theme.of(context).colorScheme.secondary),
+                  ),
+                ),
                 onPressed: () {},
-                textColor: Theme.of(context).accentColor,
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(4, 6, 14, 6),
                   child: Row(

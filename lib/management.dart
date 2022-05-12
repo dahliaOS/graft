@@ -21,30 +21,48 @@ class GraftManagement extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    FlatButton(
-                      color: Theme.of(context).accentColor,
+                    TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          Theme.of(context).colorScheme.secondary,
+                        ),
+                        textStyle: MaterialStateProperty.all(
+                          TextStyle(color: Colors.white),
+                        ),
+                      ),
                       onPressed: () {},
-                      textColor: Colors.white,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 10),
                         child: Text("Start"),
                       ),
                     ),
-                    FlatButton(
-                      color: Theme.of(context).accentColor,
+                    TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          Theme.of(context).colorScheme.secondary,
+                        ),
+                        textStyle: MaterialStateProperty.all(
+                          TextStyle(color: Colors.white),
+                        ),
+                      ),
                       onPressed: () {},
-                      textColor: Colors.white,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 10),
                         child: Text("Restart"),
                       ),
                     ),
-                    FlatButton(
-                      color: Colors.red[600],
+                    TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          Theme.of(context).colorScheme.secondary,
+                        ),
+                        textStyle: MaterialStateProperty.all(
+                          TextStyle(color: Colors.white),
+                        ),
+                      ),
                       onPressed: () {},
-                      textColor: Colors.white,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 10),
@@ -67,7 +85,7 @@ class GraftManagement extends StatelessWidget {
                           Icon(
                             Icons.memory,
                             size: 28,
-                            color: Theme.of(context).accentColor,
+                            color: Theme.of(context).colorScheme.secondary,
                           ),
                           SizedBox(
                             width: 10,
@@ -82,14 +100,17 @@ class GraftManagement extends StatelessWidget {
                                         EdgeInsets.fromLTRB(10, 5, 10, 5),
                                     labelText: "Memory",
                                     labelStyle: TextStyle(
-                                        color: Theme.of(context).accentColor),
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary),
                                     filled: true,
                                     fillColor: Colors.grey[300],
                                     enabled: true,
                                     enabledBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                             color: Theme.of(context)
-                                                .accentColor))),
+                                                .colorScheme
+                                                .secondary))),
                               ),
                             ),
                           ),
@@ -105,7 +126,7 @@ class GraftManagement extends StatelessWidget {
                             child: Icon(
                               Icons.storage_outlined,
                               size: 22,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).colorScheme.secondary,
                             ),
                           ),
                           SizedBox(
@@ -121,14 +142,17 @@ class GraftManagement extends StatelessWidget {
                                         EdgeInsets.fromLTRB(10, 5, 10, 5),
                                     labelText: "Storage",
                                     labelStyle: TextStyle(
-                                        color: Theme.of(context).accentColor),
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary),
                                     filled: true,
                                     fillColor: Colors.grey[300],
                                     enabled: true,
                                     enabledBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                             color: Theme.of(context)
-                                                .accentColor))),
+                                                .colorScheme
+                                                .secondary))),
                               ),
                             ),
                           ),
